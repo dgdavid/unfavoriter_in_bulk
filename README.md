@@ -4,16 +4,16 @@ Unfavoriter is a simple ruby script for unfav tweets in bulk. It is inspirated
 by [Twitter Unfavourite All](https://github.com/whitewhim2718/Twitter_Unfavourite_All),
 but using Ruby.
 
-# Motivation
+## Motivation
 
 This script was made only for learning and practice, besides my need to
 delete all my favs in twitter at once. **Use it at your own risk**.
 
-# Installation
+## Installation
 
 Your system must have Ruby and Rubygems installed.
 
-The scripts depends of [Ruby interfac for Twitter API](https://github.com/sferik/twitter) and
+The scripts depends of [Ruby interface for Twitter API](https://github.com/sferik/twitter) and
 [Chronic](https://github.com/mojombo/chronic) gems; you can install them manually by:
 
 ```console
@@ -27,7 +27,7 @@ or using [Bundler](http://bundler.io/) if you have installed it:
 bundle
 ```
 
-# Usage
+## Usage
 
 After cloning the repo, you need to open "unfavoriter.rb" and enter the
 required information for your account. You'll need also to create an app
