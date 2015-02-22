@@ -11,7 +11,12 @@ delete all my favs in twitter at once. **Use it at your own risk**.
 
 ## Installation
 
-Your system must have Ruby and Rubygems installed.
+First of all ensures that your system have Ruby and Rubygems installed and
+clone the repo:
+
+```console
+git clone https://github.com/dgdavid/unfavoriter_in_bulk.git
+```
 
 The scripts depends of [Ruby interface for Twitter API](https://github.com/sferik/twitter) and
 [Chronic](https://github.com/mojombo/chronic) gems; you can install them manually by:
@@ -21,7 +26,7 @@ gem install twitter
 gem install chronic
 ```
 
-or using [Bundler](http://bundler.io/) if you have installed it:
+or using [Bundler](http://bundler.io/) from project folder if you have installed it:
 
 ```console
 bundle
@@ -29,22 +34,27 @@ bundle
 
 ## Usage
 
-After cloning the repo, you need to open "unfavoriter.rb" and enter the
-required information for your account. You'll need also to create an app
-on Twitter to get tokens.
+Before running the script, you need to open `unfavoriter.rb` file and enter
+the required information for your account. You'll need also to create an app
+on [Twitter](https://apps.twitter.com/) to get tokens.
 
-Once everything is setup, run
+Once everything is setup, run it for unfav all tweets:
 
 ```console
 ruby unfavoriter.rb
 ```
 
-or
+or run it using the `--until` option for unfav tweets from the beginning until
+certain date; a few examples:
 
 ```console
 ruby unfavoriter.rb --until '1 year ago'
+ruby unfavoriter.rb --until 'March 1, 2012'
+ruby unfavoriter.rb --until '5 days ago saturday at 5:00 pm'
+...
 ```
-
+Visit [Chronic's documentation](https://github.com/mojombo/chronic#examples) to
+see more date/time examples.
 
 ## Contributing
 
