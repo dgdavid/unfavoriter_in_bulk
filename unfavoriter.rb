@@ -6,11 +6,11 @@ options = { until: 'now', batch: 100 }
 OptionParser.new do |opts|
   opts.banner = "Usage: unfavoriter.rb [options]"
 
-  opts.on("-b BATCH", "--batch BATCH", "Number of records to retrieve each request") do |u|
-    options[:until] = u
+  opts.on("-b", "--batch batch", "Number of records to retrieve each request") do |b|
+    options[:batch] = b
   end
 
-  opts.on("-u UNTIL", "--until UNTIL", "Unfav only until certain date") do |u|
+  opts.on("-u", "--until until", "Unfav only until certain date") do |u|
     options[:until] = u
   end
 end.parse!
